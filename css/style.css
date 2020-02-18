@@ -75,6 +75,8 @@
 .button_banner{
     border: 0;
     background-color: transparent;
+    outline:none;
+    cursor:pointer;
 }
 .button_banner-1{
     position: absolute;
@@ -85,4 +87,18 @@
     position: absolute;
     top: 44.5%;
     left: 90%;
+}
+
+.goods-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.goods-item-x{
+    flex-basis: 30%;
+    background-color: #d6d1d1;
+    border: 1px solid black;
+}
+.img-goods{
+    max-width: 128px;
 }
