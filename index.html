@@ -9,244 +9,244 @@
 
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo"><img src="img/logom.png" alt="" class="img-logo"></div>
-                <div class="icons-content">
-                    <a href="#" class="footer-social-a icon"><img src="img/user 4.png" alt="" class="img-icon" style="filter: invert(100%);"></a>
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo" onclick="location.href='index.html'"><img src="img/logom.png" alt="" class="img-logo">
+            </div>
+            <div class="icons-content">
+                <a href="#" class="footer-social-a icon"><img src="img/user 4.png" alt="" class="img-icon"
+                                                              style="filter: invert(100%);"></a>
+                <!-- /.icon -->
+                <div class="icons-left">
+                    <a href="templates/favorites.html" class="footer-social-a icon"><img src="img/heart.png" alt=""
+                                                                                         class="img-icon"></a>
                     <!-- /.icon -->
-                    <div class="icons-left">
-                        <a href="#" class="footer-social-a icon"><img src="img/heart.png" alt="" class="img-icon"></a>
-                        <!-- /.icon -->
-                        <a href="#" class="footer-social-a icon icon-buy"><img src="img/pay.png" alt="" class="img-icon"></a>
-                        <!-- /.icon -->
-                    </div>
-                    <!-- /.icons-left -->
+                    <a href="templates/basket.html" class="footer-social-a icon icon-buy"><img src="img/pay.png" alt=""
+                                                                                               class="img-icon"></a>
+                    <!-- /.icon -->
                 </div>
-                <!-- /.icons-content -->
-
+                <!-- /.icons-left -->
             </div>
-            <!-- /.header-content -->
+            <!-- /.icons-content -->
+
         </div>
-        <!-- /.container -->
-    </header>
-    <!-- /.header -->
-    <div class="navigation">
+        <!-- /.header-content -->
+    </div>
+    <!-- /.container -->
+</header>
+<!-- /.header -->
+<div class="navigation">
+    <div class="container">
+        <nav class="nav">
+            <a href="templates/good.html" class="a-nav">Браслеты</a><a href="templates/good.html"
+                                                                       class="a-nav">Подвески</a><a
+                href="templates/good.html" class="a-nav">Кулоны</a><a
+                href="templates/category.html" class="a-nav">Тематические значки</a>
+        </nav>
+        <!-- /.nav -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.navigation -->
+<div class="main">
+    <div class="banner">
         <div class="container">
-            <nav class="nav">
-                <a href="#" class="a-nav">Браслеты</a><a href="#" class="a-nav">Подвески</a><a href="#" class="a-nav">Кулоны</a><a
-                    href="#" class="a-nav">Тематические значки</a>
-            </nav>
-            <!-- /.nav -->
+            <div class="banner-content">
+                <button class="button_banner button_banner-1"><a class="prev" onclick="minusSlide()"><img
+                        src="img/стрелка.png" alt="" class="img-b"></a>
+                </button>
+                <div class="slider">
+                    <div class="item" style="display: block; ">
+                        <img src="img/баннер3.jpg" alt="Первый слайд">
+                    </div>
+                    <div class="item" style="display: none; ">
+                        <img src="img/anime-logo.jpg" alt="Второй слайд">
+                    </div>
+                    <div class="item" style="display: none;">
+                        <img src="img/literacy-logo.jpg" alt="Третий слайд">
+                    </div>
+                </div>
+
+                <!--                <div class="slider-dots">-->
+                <!--                    <span class="slider-dots_item" onclick="currentSlide(1)"></span>-->
+                <!--                    <span class="slider-dots_item" onclick="currentSlide(2)"></span>-->
+                <!--                    <span class="slider-dots_item" onclick="currentSlide(3)"></span>-->
+                <!--                </div>-->
+                <button class="button_banner button_banner-2"><a class="next" onclick="plusSlide()"><img
+                        src="img/стрелка2.png" alt="" class="img-b"></a>
+                </button>
+            </div>
+            <!-- /.banner-content -->
+
         </div>
         <!-- /.container -->
     </div>
-    <!-- /.navigation -->
-    <div class="main">
-        <div class="banner">
-            <div class="container">
-                <div class="banner-content">
-                    <div class="banner-img">
-                        <button class="button_banner button_banner-1"><a class="prev" onclick="minusSlide()"><img src="img/стрелка.png" alt="" class="img-b"></a>
-                        </button>
-                        <div class="slider">
-                            <div class="item">
-                                <img src="img/баннер3.jpg" alt="Первый слайд">
-                                <div class="slideText"></div>
-                            </div>
+    <!-- /.banner -->
 
-                            <div class="item" style="display: none">
-                                <img src="img/anime-logo.jpg" alt="Второй слайд">
-                                <div class="slideText"></div>
-                            </div>
-
-                            <div class="item" style="display: none">
-                                <img src="img/literacy-logo.jpg" alt="Третий слайд">
-                                <div class="slideText"></div>
-                            </div>
-
-                            <!--<a class="prev" onclick="minusSlide()">&#10094;</a>-->
-                            <!--<a class="next" onclick="plusSlide()">&#10095;</a>-->
-                        </div>
-
-                        <!--<div class="slider-dots">
-                            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
-                            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
-                            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
-                        </div>-->
-                        <button class="button_banner button_banner-2"><a class="next" onclick="plusSlide()"><img src="img/стрелка2.png" alt="" class="img-b"></a>
-                        </button>
-                    </div>
-                </div>
-                <!-- /.banner-content -->
-
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.banner -->
-
-        <div class="goods">
-            <div class="container">
-                <div class="goods-content">
-                    <div class="goods-item-xs">
-
-                        <div class="goods-item-x">
-                            <div class="goods-item-x-content">
-                                <div class="goods-item-x-img">
-                                    <img src="img/joker2.png" alt="" class="img-goods">
-                                    <!-- /.img-goods -->
-                                </div>
-                                <!-- /.goods-item-x-img -->
-                                <div class="goods-x-describe">
-                                    <div class="goods-x-describe-title">Деревянный значок "Джокер"</div>
-                                    <!-- /.goods-x-describe-title -->
-                                    <div class="goods-x-describe-price">200.0 ₽</div>
-                                    <!-- /.goods-x-describe-price -->
-                                </div>
-                                <!-- /.goods-x-describe -->
-                            </div>
-                            <!-- /.goods-item-x-content -->
-
-                        </div>
-                        <!-- /.goods-item-x -->
-                        <div class="goods-item-x">
-                            <div class="goods-item-x-content">
-                                <div class="goods-item-x-img">
-                                    <img src="img/chiken2.png" alt="" class="img-goods">
-                                    <!-- /.img-goods -->
-                                </div>
-                                <!-- /.goods-item-x-img -->
-                                <div class="goods-x-describe">
-                                    <div class="goods-x-describe-title">Деревянный значок "Индейка"</div>
-                                    <!-- /.goods-x-describe-title -->
-                                    <div class="goods-x-describe-price">200.0 ₽</div>
-                                    <!-- /.goods-x-describe-price -->
-                                </div>
-                                <!-- /.goods-x-describe -->
-                            </div>
-                            <!-- /.goods-item-x-content -->
-
-                        </div>
-                        <!-- /.goods-item-x -->
-                        <div class="goods-item-x">
-                            <div class="goods-item-x-content">
-                                <div class="goods-item-x-img">
-                                    <img src="img/rabbit2.png" alt="" class="img-goods">
-                                    <!-- /.img-goods -->
-                                </div>
-                                <!-- /.goods-item-x-img -->
-                                <div class="goods-x-describe">
-                                    <div class="goods-x-describe-title">Деревянный значок "Зая"</div>
-                                    <!-- /.goods-x-describe-title -->
-                                    <div class="goods-x-describe-price">200.0 ₽</div>
-                                    <!-- /.goods-x-describe-price -->
-                                </div>
-                                <!-- /.goods-x-describe -->
-                            </div>
-                            <!-- /.goods-item-x-content -->
-
-                        </div>
-                        <!-- /.goods-item-x -->
-                        <div class="goods-item-x">
-                            <div class="goods-item-x-content">
-                                <div class="goods-item-x-img">
-                                    <img src="img/nenene2.png" alt="" class="img-goods">
-                                    <!-- /.img-goods -->
-                                </div>
-                                <!-- /.goods-item-x-img -->
-                                <div class="goods-x-describe">
-                                    <div class="goods-x-describe-title">Деревянный значок "Дрэйк"</div>
-                                    <!-- /.goods-x-describe-title -->
-                                    <div class="goods-x-describe-price">200.0 ₽</div>
-                                    <!-- /.goods-x-describe-price -->
-                                </div>
-                                <!-- /.goods-x-describe -->
-                            </div>
-                            <!-- /.goods-item-x-content -->
-
-                        </div>
-                        <!-- /.goods-item-x -->
-                        <div class="goods-item-x">
-                            <div class="goods-item-x-content">
-                                <div class="goods-item-x-img">
-                                    <img src="img/brace2.png" alt="" class="img-goods">
-                                    <!-- /.img-goods -->
-                                </div>
-                                <!-- /.goods-item-x-img -->
-                                <div class="goods-x-describe">
-                                    <div class="goods-x-describe-title">Браслет с гравировкой</div>
-                                    <!-- /.goods-x-describe-title -->
-                                    <div class="goods-x-describe-price">900.0 ₽</div>
-                                    <!-- /.goods-x-describe-price -->
-                                </div>
-                                <!-- /.goods-x-describe -->
-                            </div>
-                            <!-- /.goods-item-x-content -->
-
-                        </div>
-                        <!-- /.goods-item-x -->
-                        <div class="goods-item-x">
-                            <div class="goods-item-x-content">
-                                <div class="goods-item-x-img">
-                                    <img src="img/green2.png" alt="" class="img-goods">
-                                    <!-- /.img-goods -->
-                                </div>
-                                <!-- /.goods-item-x-img -->
-                                <div class="goods-x-describe">
-                                    <div class="goods-x-describe-title">Кулон "Древо жизни"</div>
-                                    <!-- /.goods-x-describe-title -->
-                                    <div class="goods-x-describe-price">600.0. ₽</div>
-                                    <!-- /.goods-x-describe-price -->
-                                </div>
-                                <!-- /.goods-x-describe -->
-                            </div>
-                            <!-- /.goods-item-x-content -->
-
-                        </div>
-                        <!-- /.goods-item-x -->
-                    </div>
-                    <!-- /.goods-item-xs -->
-                    <div class="goods-button-all">
-                        <button class="goods-buttton-button"><img src="img/далее.png" alt="" class="goods-button-img">
-                        </button>
-                    </div>
-                    <!-- /.goods-button-all -->
-                </div>
-                <!-- /.goods-content -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.goods -->
-    </div>
-    <!-- /.main -->
-    <footer class="footer">
+    <div class="goods">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-nav-social">
-                    <nav class="footer-nav">
-                        <a href="#" class="footer-nav-a">О Нас</a><a href="#" class="footer-nav-a">Условия</a> <img
+            <div class="goods-content">
+                <div class="goods-item-xs">
+
+                    <div class="goods-item-x">
+                        <div class="goods-item-x-content">
+                            <div class="goods-item-x-img">
+                                <img src="img/joker2.png" alt="" class="img-goods">
+                                <!-- /.img-goods -->
+                            </div>
+                            <!-- /.goods-item-x-img -->
+                            <div class="goods-x-describe">
+                                <div class="goods-x-describe-title">Деревянный значок "Джокер"</div>
+                                <!-- /.goods-x-describe-title -->
+                                <div class="goods-x-describe-price">200.0 ₽</div>
+                                <!-- /.goods-x-describe-price -->
+                            </div>
+                            <!-- /.goods-x-describe -->
+                        </div>
+                        <!-- /.goods-item-x-content -->
+
+                    </div>
+                    <!-- /.goods-item-x -->
+                    <div class="goods-item-x">
+                        <div class="goods-item-x-content">
+                            <div class="goods-item-x-img">
+                                <img src="img/chiken2.png" alt="" class="img-goods">
+                                <!-- /.img-goods -->
+                            </div>
+                            <!-- /.goods-item-x-img -->
+                            <div class="goods-x-describe">
+                                <div class="goods-x-describe-title">Деревянный значок "Индейка"</div>
+                                <!-- /.goods-x-describe-title -->
+                                <div class="goods-x-describe-price">200.0 ₽</div>
+                                <!-- /.goods-x-describe-price -->
+                            </div>
+                            <!-- /.goods-x-describe -->
+                        </div>
+                        <!-- /.goods-item-x-content -->
+
+                    </div>
+                    <!-- /.goods-item-x -->
+                    <div class="goods-item-x">
+                        <div class="goods-item-x-content">
+                            <div class="goods-item-x-img">
+                                <img src="img/rabbit2.png" alt="" class="img-goods">
+                                <!-- /.img-goods -->
+                            </div>
+                            <!-- /.goods-item-x-img -->
+                            <div class="goods-x-describe">
+                                <div class="goods-x-describe-title">Деревянный значок "Зая"</div>
+                                <!-- /.goods-x-describe-title -->
+                                <div class="goods-x-describe-price">200.0 ₽</div>
+                                <!-- /.goods-x-describe-price -->
+                            </div>
+                            <!-- /.goods-x-describe -->
+                        </div>
+                        <!-- /.goods-item-x-content -->
+
+                    </div>
+                    <!-- /.goods-item-x -->
+                    <div class="goods-item-x">
+                        <div class="goods-item-x-content">
+                            <div class="goods-item-x-img">
+                                <img src="img/nenene2.png" alt="" class="img-goods">
+                                <!-- /.img-goods -->
+                            </div>
+                            <!-- /.goods-item-x-img -->
+                            <div class="goods-x-describe">
+                                <div class="goods-x-describe-title">Деревянный значок "Дрэйк"</div>
+                                <!-- /.goods-x-describe-title -->
+                                <div class="goods-x-describe-price">200.0 ₽</div>
+                                <!-- /.goods-x-describe-price -->
+                            </div>
+                            <!-- /.goods-x-describe -->
+                        </div>
+                        <!-- /.goods-item-x-content -->
+
+                    </div>
+                    <!-- /.goods-item-x -->
+                    <div class="goods-item-x">
+                        <div class="goods-item-x-content">
+                            <div class="goods-item-x-img">
+                                <img src="img/brace2.png" alt="" class="img-goods">
+                                <!-- /.img-goods -->
+                            </div>
+                            <!-- /.goods-item-x-img -->
+                            <div class="goods-x-describe">
+                                <div class="goods-x-describe-title">Браслет с гравировкой</div>
+                                <!-- /.goods-x-describe-title -->
+                                <div class="goods-x-describe-price">900.0 ₽</div>
+                                <!-- /.goods-x-describe-price -->
+                            </div>
+                            <!-- /.goods-x-describe -->
+                        </div>
+                        <!-- /.goods-item-x-content -->
+
+                    </div>
+                    <!-- /.goods-item-x -->
+                    <div class="goods-item-x">
+                        <div class="goods-item-x-content">
+                            <div class="goods-item-x-img">
+                                <img src="img/green2.png" alt="" class="img-goods">
+                                <!-- /.img-goods -->
+                            </div>
+                            <!-- /.goods-item-x-img -->
+                            <div class="goods-x-describe">
+                                <div class="goods-x-describe-title">Кулон "Древо жизни"</div>
+                                <!-- /.goods-x-describe-title -->
+                                <div class="goods-x-describe-price">600.0. ₽</div>
+                                <!-- /.goods-x-describe-price -->
+                            </div>
+                            <!-- /.goods-x-describe -->
+                        </div>
+                        <!-- /.goods-item-x-content -->
+
+                    </div>
+                    <!-- /.goods-item-x -->
+                </div>
+                <!-- /.goods-item-xs -->
+                <div class="goods-button-all">
+                    <button class="goods-buttton-button"><img src="img/далее.png" alt="" class="goods-button-img">
+                    </button>
+                </div>
+                <!-- /.goods-button-all -->
+            </div>
+            <!-- /.goods-content -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.goods -->
+</div>
+<!-- /.main -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-nav-social">
+                <nav class="footer-nav">
+                    <a href="templates/about.html" class="footer-nav-a">О Нас</a><a href="templates/conditions.html"
+                                                                                    class="footer-nav-a">Условия</a>
+                    <img
                             class="img-icon footer-icon" src="img/location.png"> <span class="footer-span">  <a
-                            href="https://goo.gl/maps/KjJ5rq3xZMPFNN588"
-                            class="map-a">Бульвар Энтузиастов, 2А, Тамбов</a></span>
-                    </nav>
-                    <!-- /.footer-nav -->
-                    <div class="footer-social">
-                        <a href="https://vk.com/moypattern" class="footer-social-a"><img src="img/вконтакте.png" alt=""
-                                                                                         class="footer-social-img"></a>
-                        <a href="https://www.instagram.com/moypattern/?hl=ru" class="footer-social-a"><img
-                                src="img/инстаграм (2).png" alt="" class="footer-social-img"></a>
-                    </div>
-                    <!-- /.footer-social -->
+                        href="https://goo.gl/maps/KjJ5rq3xZMPFNN588"
+                        class="map-a">Бульвар Энтузиастов, 2А, Тамбов</a></span>
+                </nav>
+                <!-- /.footer-nav -->
+                <div class="footer-social">
+                    <a href="https://vk.com/moypattern" class="footer-social-a"><img src="img/вконтакте.png" alt=""
+                                                                                     class="footer-social-img"></a>
+                    <a href="https://www.instagram.com/moypattern/?hl=ru" class="footer-social-a"><img
+                            src="img/инстаграм (2).png" alt="" class="footer-social-img"></a>
                 </div>
-                <!-- /.footer-nav-social -->
-                <div class="footer-copyright">©2020 K i T</div>
-                <!-- /.footer-copyright -->
+                <!-- /.footer-social -->
             </div>
-            <!-- /.footer-content -->
+            <!-- /.footer-nav-social -->
+            <div class="footer-copyright">©2020 K i T</div>
+            <!-- /.footer-copyright -->
         </div>
-        <!-- /.container -->
-    </footer>
-    <!-- /.footer -->
+        <!-- /.footer-content -->
+    </div>
+    <!-- /.container -->
+</footer>
+<!-- /.footer -->
 </body>
 </html>
