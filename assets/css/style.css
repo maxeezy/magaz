@@ -627,3 +627,17 @@ iframe {
     margin-left: 32px;
     margin-top: 4px;
 }
+
+.main-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://i.gifer.com/BIY.gif")  no-repeat center;
+    background-size: cover;
+    height: 80vh;
+}
+.error-text{
+    color: gray;
+    font-size: 50px;
+    text-align: center;
+}
