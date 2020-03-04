@@ -623,10 +623,12 @@ iframe {
 .string {
     color: white;
     word-spacing: 10px;
-
     margin-left: 32px;
     margin-top: 4px;
 }
+
+
+/* 404 */
 
 .main-error{
     display: flex;

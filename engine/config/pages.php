@@ -9,11 +9,6 @@ $pages = [
         'title' => 'Страница не найдена',
         'content' => '404.html'
     ],
-    'good' => [
-        'title' => 'Товар | Интернет магазин значков и украшений',
-        'content' => 'good.html',
-        'scripts' => ['buy-favorites']
-    ],
     'about' => [
         'title' => 'О нас | Интернет магазин значков и украшений',
         'content' => 'about.html'
@@ -21,16 +16,6 @@ $pages = [
     'conditions' => [
         'title' => 'Условия | Интернет магазин значков и украшений',
         'content' => 'conditions.html'
-    ],
-    'favorites' => [
-        'title' => 'Избранное | Интернет магазин значков и украшений',
-        'content' => 'favorites.html',
-        'scripts' => ['buy-favorites'],['delete']
-    ],
-    'basket' => [
-        'title' => 'Корзина | Интернет магазин значков и украшений',
-        'content' => 'basket.html',
-        'scripts' => ['buy-favorites'],['delete']
     ],
     'article-brace' => [
         'title' => 'Как заказать браслет | Интернет магазин значков и украшений',
@@ -40,4 +25,30 @@ $pages = [
         'title' => 'Как заказать значок | Интернет магазин значков и украшений',
         'content' => 'article-znacok.html'
     ],
+    'category' => [
+        'title' => 'Категории | Интернет магазин значков и украшений',
+        'content' => 'category.html',
+        'scripts' => ['default'], ['category']
+    ],
+    'section' => [
+        'title' => 'Товар | Интернет магазин значков и украшений',
+        'content' => 'section.html',
+        'scripts' => ['default']
+    ],
+    'good' => [
+        'title' => 'Товар | Интернет магазин значков и украшений',
+        'content' => 'good.html',
+        'scripts' => ['buy-favorites']
+    ],
+    'favorites' => [
+        'title' => 'Избранное | Интернет магазин значков и украшений',
+        'content' => 'favorites.html',
+        'scripts' => ['buy-favorites'], ['delete']
+    ],
+    'basket' => [
+        'title' => 'Корзина | Интернет магазин значков и украшений',
+        'content' => 'basket.html',
+        'scripts' => ['buy-favorites'], ['delete']
+    ],
+
 ];

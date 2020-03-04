@@ -2,11 +2,10 @@
 include_once __DIR__ . '/engine/config/pages.php';
 $routes = explode('/', $_SERVER['REQUEST_URI']);
 $current = $pages[$routes[1]];
-
-if ($current == null) {
+$current2 = $routes[2];
+if (($current == null)||!empty($current2)) {
     $current = $pages['404'];
 }
-var_dump($_GET);
 $title = $current['title'];
 $content = file_get_contents(__DIR__ . '/templates/' . $current['content']);
 $scripts = '';
