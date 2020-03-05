@@ -269,9 +269,10 @@ button {
     width: 840px;
 }
 
-.main-good-content {
+.main-good-photo-describe {
     display: flex;
     align-items: center;
+    margin-bottom: 61px;
 }
 
 .main-good-photo-block {
@@ -283,7 +284,12 @@ button {
 .main-good-all {
     width: 50%;
 }
-
+.main-good-features{
+    text-align: center;
+}
+.main-good-features>a{
+    color: orange;
+}
 .main-good-all-name {
     margin-bottom: 20px;
     font-size: 22px;

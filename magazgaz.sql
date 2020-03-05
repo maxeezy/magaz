@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 03 2020 г., 08:27
+-- Время создания: Мар 05 2020 г., 14:06
 -- Версия сервера: 8.0.15
--- Версия PHP: 7.2.22
+-- Версия PHP: 7.1.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -110,6 +110,15 @@ CREATE TABLE `goods` (
   `price` int(11) NOT NULL,
   `img` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Дамп данных таблицы `goods`
+--
+
+INSERT INTO `goods` (`id`, `type_id`, `name`, `description`, `price`, `img`) VALUES
+(1, 4, 'Деревянный значок \"Джокер\"', 'Этот значок выполнен по фильму \"Джокер\", где роль Джокера исполнил непревзойденный Хоакин Феникс. Значок прекрасно подойдет к вашей улыбке,особенно если у вас брекеты.', 200, 'joker'),
+(2, 4, 'Деревянный значок \"Индейка\"', 'Вы смотрели сериал Друзья? Где Джоуи хотел испугать Чендлера на День Благодарения, надев на голову Индюшку. Вы можете приобрести мини-версию Индюшки и порадовать себя или своих друзей', 200, 'chiken'),
+(3, 4, 'Деревянный значок \"Дрэээйк\"', 'Тот самый Drizzy, с Торонто, которого уничтожил Pusha-T в трэке \"The Story Of Adidon\" под бит из трека Jay-Z.', 200, 'nenene');
 
 -- --------------------------------------------------------
 
@@ -280,7 +289,7 @@ ALTER TABLE `buy`
 -- AUTO_INCREMENT для таблицы `goods`
 --
 ALTER TABLE `goods`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `user`
