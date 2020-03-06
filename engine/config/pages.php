@@ -28,7 +28,7 @@ $pages = [
     'category' => [
         'title' => 'Категории | Интернет магазин значков и украшений',
         'content' => 'category.html',
-        'scripts' => ['default'], ['category']
+        'scripts' => ['default', 'category']
     ],
     'section' => [
         'title' => 'Товар | Интернет магазин значков и украшений',
@@ -43,12 +43,12 @@ $pages = [
     'favorites' => [
         'title' => 'Избранное | Интернет магазин значков и украшений',
         'content' => 'favorites.html',
-        'scripts' => ['buy-favorites'], ['delete']
+        'scripts' => ['buy-favorites', 'delete']
     ],
     'basket' => [
         'title' => 'Корзина | Интернет магазин значков и украшений',
         'content' => 'basket.html',
-        'scripts' => ['buy-favorites'], ['delete']
+        'scripts' => ['buy-favorites', 'delete']
     ],
 
 ];
