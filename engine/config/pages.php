@@ -38,7 +38,7 @@ $pages = [
     'good' => [
         'title' => 'Товар | Интернет магазин значков и украшений',
         'content' => 'good.html',
-        'scripts' => ['buy-favorites']
+        'scripts' => ['view_one']
     ],
     'favorites' => [
         'title' => 'Избранное | Интернет магазин значков и украшений',
