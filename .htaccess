@@ -1,7 +1,9 @@
 RewriteEngine On
 RewriteRule ^404/? 404.php [L]
-RewriteRule ^good/([0-9]+)/? good.php?id=$1 [L]
-#RewriteRule ^([a-z]+)$ /test.php?article=$1 [L]
-#RewriteRule ^([a-z]+)/([0-9]+)$ /test.php?article=$1&id_cat=$2 [L]
+RewriteRule ^good/([0-9]+)$ good.php?id=$1 [L]
+RewriteRule ^(badges)$ section.php?article=$1 [L]
+RewriteRule ^(passport-covers)$ section.php?article=$1 [L]
+RewriteRule ^(pendants)$ section.php?article=$1 [L]
+RewriteRule ^(brace)/([0-9]+)$ section.php?article=$1&id=$2 [L]
 
-ErrorDocument 404 http://magaz-git/404
+ErrorDocument 404 http://magaz/404
