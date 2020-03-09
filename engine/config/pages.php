@@ -3,7 +3,7 @@ $pages = [
     '' => [
         'title' => 'Интернет магазин значков и украшений',
         'content' => 'main.html',
-        'scripts' => ['main']
+        'scripts' => ['main_view','view_add']
     ],
     '404' => [
         'title' => 'Страница не найдена',
@@ -50,5 +50,10 @@ $pages = [
         'content' => 'basket.html',
         'scripts' => ['buy-favorites', 'delete']
     ],
+    'brace'  => [
+        'title' => 'Браслеты | Интернет магазин значков и украшений',
+        'content' => 'section.html',
+        'script' => ['get-category','view_category']
+    ]
 
 ];

@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'maga';
+$db   = 'magaz';
 $user = 'root';
 $pass = '';
 $charset = 'utf8';
@@ -32,6 +32,20 @@ function queryAssoc($sql, $params, $pdo)
 {
     $stmt = $pdo->prepare($sql);
     $stmt->execute($params);
-    return $some = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $some = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+}
+function queryAssocNoP($sql, $pdo)
+{
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    return $some = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+}
+function queryObjNoP($sql, $pdo)
+{
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    return $some = $stmt->fetch(PDO::FETCH_OBJ);
 
 }
