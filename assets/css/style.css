@@ -145,10 +145,23 @@ button {
     flex-basis: 32%;
     margin-bottom: 20px;
 }
+.goods-x-describe{
+    max-width: 240px;
+    color: black;
+}
+
+.goods-x-describe-title{
+    line-height: 180%;
+    margin-bottom: 5px;
+}
+
 .goods-item-x-wrap{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.good-item-x-wrap >a{
+    text-decoration: none;
 }
 .goods-item-x-content {
     cursor: pointer;

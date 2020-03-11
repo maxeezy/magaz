@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'magaz';
+$db   = 'magaz3';
 $user = 'root';
 $pass = '';
 $charset = 'utf8';
