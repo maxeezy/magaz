@@ -194,11 +194,10 @@ button {
     justify-content: center;
 }
 
-.goods-buttton-button {
+.goods-button-button {
     border: none;
     background-color: transparent;
     cursor: pointer;
-
 }
 
 .goods-button-img {
@@ -335,7 +334,6 @@ button {
 
 .main-good-all-buy_field-group {
     display: flex;
-
 }
 
 .main-good-all-buy_field-group-basket {
@@ -355,7 +353,6 @@ button {
 .main-good-all-buy_field-group-favorites-img {
     width: 24px;
     filter: invert(100%);
-
 }
 
 .main-good-all-buy_field-group-favorites-button {
@@ -488,7 +485,6 @@ button {
 
 .basket-goods-x-price-one-text {
     margin-right: 101px;
-
 }
 
 .basket-goods-x-price-few {
@@ -520,7 +516,6 @@ button {
 
 .basket-total-main {
     flex-direction: column;
-
 }
 
 .basket-total-main-line {
@@ -543,7 +538,6 @@ button {
 
 .basket-total-main-line-text3 {
     margin-right: 211px;
-
 }
 
 .basket-total-button-block {
@@ -637,11 +631,9 @@ button {
 
 .borders-top {
     border-top: 1px solid #dcdcdc;
-
 }
 
 iframe {
-
     display: flex;
     margin: 25px auto;
 }
