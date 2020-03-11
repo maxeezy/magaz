@@ -145,26 +145,29 @@ button {
     flex-basis: 32%;
     margin-bottom: 20px;
 }
-.goods-x-describe{
+
+.goods-x-describe {
     max-width: 240px;
     color: black;
 }
 
-.goods-x-describe-title{
+.goods-x-describe-title {
     line-height: 180%;
     margin-bottom: 5px;
 }
 
-.goods-item-x-wrap{
+.goods-item-x-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.good-item-x-wrap >a{
-    text-decoration: none;
-}
+
 .goods-item-x-content {
     cursor: pointer;
+}
+
+.good-item-x-wrap > a {
+    text-decoration: none;
 }
 
 .goods-item-x-content:hover .goods-item-x-img {
@@ -298,19 +301,24 @@ button {
 .main-good-all {
     width: 50%;
 }
-.main-good-features{
+
+.main-good-features {
     text-align: center;
 }
-.main-good-features>a{
+
+.main-good-features > a {
     color: orange;
 }
+
 .main-good-all-name {
     margin-bottom: 20px;
     font-size: 22px;
 }
-.main-good-all-counter{
+
+.main-good-all-counter {
     margin-top: 5px;
 }
+
 .main-good-all-price {
     display: flex;
     justify-content: space-between;
@@ -653,15 +661,16 @@ iframe {
 
 /* 404 */
 
-.main-error{
+.main-error {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("https://i.gifer.com/BIY.gif")  no-repeat center;
+    background: url("https://i.gifer.com/BIY.gif") no-repeat center;
     background-size: cover;
     height: 80vh;
 }
-.error-text{
+
+.error-text {
     color: gray;
     font-size: 50px;
     text-align: center;

@@ -8,7 +8,7 @@ function main_view() {
             let result = JSON.parse(xhr.responseText);
             console.log(result);
             for (let i = 0; i < result.length; i++) {
-                document.querySelector('.goods-item-xs').insertAdjacentHTML("beforeend", "<div class='goods-item-x'><div class='good-item-x-wrap'><a href='http://magaz/good/" + result[i]['id'] + "'><div class='good-item-x-wrap'><div class='goods-item-x-content'><div class='goods-item-x-img'><img src='" + result[i]['img'] + "'  class='img-goods'></div></div><div class='goods-x-describe'><div class='goods-x-describe-title'>" + result[i]['name'] + "</div><div class='goods-x-describe-price'>" + result[i]['price'] + "  ₽</div></div></div></a></div></div>");
+                document.querySelector('.goods-item-xs').insertAdjacentHTML("beforeend", "<div class='goods-item-x'><div class='good-item-x-wrap'><a href='http://magaz/good/" + result[i]['id'] + "'><div class='good-item-x-wrap'><div class='goods-item-x-content'><div class='goods-item-x-img'><img src='" + result[i]['img'] + "' alt=''  class='img-goods'></div></div><div class='goods-x-describe'><div class='goods-x-describe-title'>" + result[i]['name'] + "</div><div class='goods-x-describe-price'>" + result[i]['price'] + "  ₽</div></div></div></a></div></div>");
             }
         }
     }
