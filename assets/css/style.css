@@ -147,7 +147,7 @@ button {
 }
 
 .goods-x-describe {
-    max-width: 240px;
+    max-width: 260px;
     color: black;
 }
 
@@ -157,17 +157,16 @@ button {
 }
 
 .goods-item-x-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-left: 52px;
 }
 
 .goods-item-x-content {
     cursor: pointer;
 }
 
-.good-item-x-wrap > a {
+.goods-item-x > a {
     text-decoration: none;
+    cursor: auto;
 }
 
 .goods-item-x-content:hover .goods-item-x-img {

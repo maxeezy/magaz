@@ -3,7 +3,7 @@ $pages = [
     '' => [
         'title' => 'Интернет магазин значков и украшений',
         'content' => 'main.html',
-        'scripts' => ['main_view','view_add']
+        'scripts' => ['main_view', 'view_add']
     ],
     '404' => [
         'title' => 'Страница не найдена',
@@ -25,16 +25,6 @@ $pages = [
         'title' => 'Как заказать значок | Интернет магазин значков и украшений',
         'content' => 'article-znacok.html'
     ],
-    'category' => [
-        'title' => 'Категории | Интернет магазин значков и украшений',
-        'content' => 'category.html',
-        'scripts' => ['default', 'category']
-    ],
-    'section' => [
-        'title' => 'Товар | Интернет магазин значков и украшений',
-        'content' => 'section.html',
-        'scripts' => ['default']
-    ],
     'good' => [
         'title' => 'Товар | Интернет магазин значков и украшений',
         'content' => 'good.html',
@@ -50,10 +40,29 @@ $pages = [
         'content' => 'basket.html',
         'scripts' => ['buy-favorites', 'delete']
     ],
-    'brace'  => [
+    'brace' => [
         'title' => 'Браслеты | Интернет магазин значков и украшений',
         'content' => 'section.html',
-        'script' => ['get-category','view_category']
+        'scripts' => ['view_good_article']
+    ],
+    'badges' => [
+        'title' => 'Значки | Интернет магазин значков и украшений',
+        'content' => 'category.html',
+        'scripts' => ['view_category']
+    ],
+    'badges-category' => [
+        'title' => 'Значки | Интернет магазин значков и украшений',
+        'content' => 'section.html',
+        'scripts' => ['view_good_article']
+    ],
+    'pendants' => [
+        'title' => 'Кулоны | Интернет магазин значков и украшений',
+        'content' => 'section.html',
+        'scripts' => ['view_good_article']
+    ],
+    'passport-covers' => [
+        'title' => 'Обложки на паспорт | Интернет магазин значков и украшений',
+        'content' => 'section.html',
+        'scripts' => ['view_good_article']
     ]
-
 ];

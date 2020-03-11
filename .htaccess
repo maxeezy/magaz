@@ -1,10 +1,11 @@
 RewriteEngine On
 RewriteRule ^404/? 404.php [L]
 RewriteRule ^good/([0-9]+)$ good.php?id=$1 [L]
-RewriteRule ^(badges)$ section.php?article=$1 [L]
+RewriteRule ^(brace)$ section.php?article=$1 [L]
 RewriteRule ^(passport-covers)$ section.php?article=$1 [L]
 RewriteRule ^(pendants)$ section.php?article=$1 [L]
-RewriteRule ^(brace)/([0-9]+)? section.php?article=$1&id=$2 [L]
+RewriteRule ^(badges)$ category.php?article=$1 [L]
+RewriteRule ^(badges-category)/([0-9]+)? section.php?article=$1&id=$2 [L]
 RewriteRule ^favorites$ favorites.php [L]
 RewriteRule ^basket$ basket.php [L]
 RewriteRule ^conditions$ conditions.php [L]

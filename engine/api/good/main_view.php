@@ -1,9 +1,10 @@
 <?php
-require_once 'C:\OSPanel\domains\magaz\engine\database\pdo.php';
+require_once  'E:\prog\os\OSPanel\domains\magaz\engine\database\pdo.php';
 $inputData = json_decode(file_get_contents("php://input"), true);
-$info = queryAssocNoP('SELECT  `name`, `id`, `price`, `img` FROM `goods` LIMIT 6', $pdo);
-if ($info) {
+$info = queryAssocNoP('SELECT  name,id,price,img FROM `goods` LIMIT 6',$pdo);
+if($info){
     print json_encode($info);
-} else {
+}
+else{
     http_response_code(404);
 }
