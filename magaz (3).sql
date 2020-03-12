@@ -7,21 +7,13 @@
 -- Версия сервера: 10.2.22-MariaDB
 -- Версия PHP: 7.2.22
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- База данных: `magaz`
 --
 
+create database `magaz4`;
+use `magaz4`;
 -- --------------------------------------------------------
 
 --
@@ -33,8 +25,8 @@ CREATE TABLE `adress` (
   `city` text NOT NULL,
   `street` text NOT NULL,
   `house` text NOT NULL,
-  `index_adress` text CHARACTER SET utf8mb4 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `index_adress` text NOT NULL
+);
 
 -- --------------------------------------------------------
 
@@ -46,7 +38,7 @@ CREATE TABLE `basket` (
   `user_id` int(11) NOT NULL,
   `good_id` int(11) NOT NULL,
   `count` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
 -- --------------------------------------------------------
 
@@ -60,7 +52,7 @@ CREATE TABLE `buy` (
   `status_id` int(11) NOT NULL,
   `cost` int(11) NOT NULL,
   `date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
 -- --------------------------------------------------------
 
@@ -72,7 +64,7 @@ CREATE TABLE `category` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL,
   `img` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
 --
 -- Дамп данных таблицы `category`
@@ -237,7 +229,7 @@ INSERT INTO `goods` (`id`, `type_id`, `name`, `description`, `price`, `img`) VAL
 CREATE TABLE `good_type` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
 --
 -- Дамп данных таблицы `good_type`
@@ -277,7 +269,7 @@ INSERT INTO `rank` (`id`, `name`) VALUES
 CREATE TABLE `status` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
 --
 -- Дамп данных таблицы `status`
@@ -303,7 +295,7 @@ CREATE TABLE `user` (
   `login` text NOT NULL,
   `password` text NOT NULL,
   `rank_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
 --
 -- Индексы сохранённых таблиц
@@ -460,8 +452,4 @@ ALTER TABLE `goods`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `user_ibfk_3` FOREIGN KEY (`rank_id`) REFERENCES `rank` (`id`);
-COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
