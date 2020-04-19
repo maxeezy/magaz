@@ -28,17 +28,17 @@ $pages = [
     'good' => [
         'title' => 'Товар | Интернет магазин значков и украшений',
         'content' => 'good.html',
-        'scripts' => ['view_one']
+        'scripts' => ['view_one','to-favorite','to-basket']
     ],
     'favorites' => [
         'title' => 'Избранное | Интернет магазин значков и украшений',
         'content' => 'favorites.html',
-        'scripts' => ['buy-favorites', 'delete']
+        'scripts' => ['favorites_to-basket', 'delete_favorites','view_favorites']
     ],
     'basket' => [
         'title' => 'Корзина | Интернет магазин значков и украшений',
         'content' => 'basket.html',
-        'scripts' => ['buy-favorites', 'delete']
+        'scripts' => ['accept_basket', 'delete_basket','view_basket','change_price']
     ],
     'brace' => [
         'title' => 'Браслеты | Интернет магазин значков и украшений',
@@ -64,5 +64,25 @@ $pages = [
         'title' => 'Обложки на паспорт | Интернет магазин значков и украшений',
         'content' => 'section.html',
         'scripts' => ['view_good_article']
+    ]
+    ,
+    'account' => [
+        'title' => 'Интернет магазин значков и украшений',
+        'content' => 'account.html'
+    ],
+    'sign-in' => [
+        'title' => 'Вход в аккаунт | Интернет магазин значков и украшений',
+        'content' => 'sign-in.html',
+        'scripts' => ['sign-in']
+    ],
+    'sign-up' => [
+        'title' => 'Регистрация | Интернет магазин значков и украшений',
+        'content' => 'sign-up.html',
+        'scripts' => ['sign-up']
+    ],
+    'user' => [
+        'title' => 'Личный кабинет | Интернет магазин значков и украшений',
+        'content' => 'user.html',
+        'scripts' => ['view_info','view_orders']
     ]
 ];

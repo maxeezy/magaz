@@ -1,5 +1,5 @@
 <?php
-require_once  'E:\prog\os\OSPanel\domains\magaz\engine\database\pdo.php';
+require_once __DIR__ . '/../../database/pdo.php';
 $inputData = json_decode(file_get_contents("php://input"), true);
 $ot = (int)$inputData['count'];
 $do = 6;
