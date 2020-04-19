@@ -1,3 +1,4 @@
+
 <div class="main-good">
     <div class="container">
         <div class="main-good-content">
@@ -17,33 +18,18 @@
                     <!-- /.main-good-all-price -->
                     <div class="main-good-all-buy_field">
                         <div class="main-good-all-counter">
-                            <select name="#" id="#">
-                                <option value="sadasd">1</option>
-                                <option value="sadasd">2</option>
-                                <option value="sadasd">3</option>
-                                <option value="sadasd">4</option>
-                                <option value="sadasd">5</option>
-                                <option value="sadasd">6</option>
-                                <option value="sadasd">7</option>
-                                <option value="sadasd">8</option>
-                                <option value="sadasd">9</option>
-                                <option value="sadasd">10</option>
-                            </select>
-
+                            <input type="text" value="1" style="width: 50px;" onblur="check_count(this);" onchange="check_count(this)" id="input">
                         </div>
                         <!-- /.main-good-all-counter -->
                         <div class="main-good-all-buy_field-group">
                             <div class="main-good-all-buy_field-group-favorites">
-                                <button class="main-good-all-buy_field-group-favorites-button"><img
-                                        src="../assets/img/heart.png"
-                                        alt=""
-                                        class="main-good-all-buy_field-group-favorites-img">
+                                <button class="main-good-all-buy_field-group-favorites-button" onclick="to_favorite()"><img src="../assets/img/heart.png" alt="" class="main-good-all-buy_field-group-favorites-img">
                                 </button>
                                 <!-- /.main-good-all-buy_field-group-favorites-button -->
                             </div>
                             <!-- /.main-good-all-buy_field-group-favorites -->
                             <div class="main-good-all-buy_field-group-basket">
-                                <button class="main-good-all-buy_field-group-basket-button">В корзину</button>
+                                <button class="main-good-all-buy_field-group-basket-button" onclick="to_basket();">В корзину</button>
                                 <!-- /.main-good-all-buy_field-group-basket-button -->
                             </div>
                             <!-- /.main-good-all-buy_field-group-basket -->
@@ -64,6 +50,7 @@
         </div>
         <!-- /.main-good-content -->
         <script>view_one();</script>
+
     </div>
     <!-- /.container -->
 </div>
