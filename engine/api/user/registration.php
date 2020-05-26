@@ -34,6 +34,7 @@ if (empty($alert)){
     $mail = trim($inputData['mail']);
     $password = trim($inputData['password']);
     add("INSERT INTO `user`(id,  email, login, password, rank_id) VALUES (NULL, :mail, :login,:password, 1)",[':mail'=>$mail,':login'=>$login,':password'=>password_hash($password,PASSWORD_BCRYPT)],$pdo);
+    add("INSERT INTO `adress`(user_id, city, street, house, index_adress) VALUES (:user_id,NULL,NULL,NULL,NULL)",[':user_id'=>$pdo->lastInsertId()],$pdo);
     $alert['good']  = "Вы зарегестрированы. Можете ";
 }
 print  json_encode($alert);

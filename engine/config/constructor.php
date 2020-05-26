@@ -2,9 +2,9 @@
 include_once  'pages.php';
 $routes = explode('/', $_SERVER['REQUEST_URI']);
 $current = $pages[$routes[1]];
-//if ($current == null) {
-//    $current = $pages['404'];
-//}
+if ($current == null) {
+    $current = $pages['404'];
+}
 $title = $current['title'];
 $content = file_get_contents('templates/' . $current['content']);
 $scripts = '';

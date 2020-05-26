@@ -92,6 +92,21 @@ if ($_SESSION['logged_user']) {
                     }
                 }
                 break;
+            case "house":
+                if (strlen($inputData['value']) < 0) {
+                    $alert[] = "Пустое значение";
+                } elseif (!preg_match('/\d/', $inputData['value'])) {
+                    $alert[] = "Вводите корректный почтовый индекс";
+                }
+                else{
+                    if ($user->house != $inputData['value']){
+                        add("UPDATE `adress` SET `house` = :house WHERE user_id = (SELECT id FROM `user` WHERE login = :login)", [':house' => $inputData['value'], ':login' => $_SESSION['logged_user']['login']], $pdo);
+                        $alert[] = "Номер дома изменён";
+                    } else {
+                        $alert[] = "Введите почтовый индекс отличный от существующего";
+                    }
+                }
+                break;
             default:
                 $alert[] = "Ошибка";
                 break;

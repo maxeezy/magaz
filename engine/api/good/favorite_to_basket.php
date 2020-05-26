@@ -9,7 +9,7 @@ if (isset($_SESSION['logged_user'])){
             $alert[] = "Товар уже есть в корзине";
         }
         else{
-            add("INSERT INTO `basket`(user_id, good_id, count) VALUES ((SELECT id FROM `user` WHERE login = :login),:good_id,1)",[':login'=>$_SESSION['logged_user']['login'],'good_id'=>$inputData['id']],$pdo);
+            add("INSERT INTO `basket`(user_id, good_id, count) VALUES ((SELECT id FROM `user` WHERE login = :login),:good_id,1)",[':login'=>$_SESSION['logged_user']['login'],':good_id'=>$inputData['id']],$pdo);
             $alert[] = "Товар добавлен в корзину";
         }
     }

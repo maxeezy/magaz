@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 19 2020 г., 19:30
+-- Время создания: Май 21 2020 г., 17:59
 -- Версия сервера: 10.2.22-MariaDB
 -- Версия PHP: 7.2.22
 
@@ -44,7 +44,8 @@ INSERT INTO `adress` (`user_id`, `city`, `street`, `house`, `index_adress`) VALU
 (2, 'Профессиональ', 'Профессиональная', '1', '414000'),
 (3, NULL, NULL, NULL, NULL),
 (4, NULL, NULL, NULL, NULL),
-(5, NULL, NULL, NULL, NULL);
+(5, NULL, NULL, NULL, NULL),
+(6, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -63,7 +64,8 @@ CREATE TABLE `basket` (
 --
 
 INSERT INTO `basket` (`user_id`, `good_id`, `count`) VALUES
-(3, 3, 1);
+(3, 3, 1),
+(2, 21, 1);
 
 -- --------------------------------------------------------
 
@@ -84,9 +86,11 @@ CREATE TABLE `buy` (
 --
 
 INSERT INTO `buy` (`id`, `user_id`, `status_id`, `cost`, `date`) VALUES
-(25, 2, 1, 250, '2020-04-18 19:20:37'),
+(25, 2, 3, 250, '2020-04-18 19:20:37'),
 (26, 2, 1, 250, '2020-04-18 19:23:30'),
-(27, 2, 1, 450, '2020-04-18 19:25:03');
+(27, 2, 1, 450, '2020-04-18 19:25:03'),
+(28, 2, 1, 850, '2020-05-14 17:33:47'),
+(29, 2, 1, 1350, '2020-05-14 17:38:38');
 
 -- --------------------------------------------------------
 
@@ -108,7 +112,16 @@ INSERT INTO `buy_goods` (`buy_id`, `good_id`, `count`) VALUES
 (25, 3, 1),
 (26, 32, 1),
 (27, 2, 1),
-(27, 9, 1);
+(27, 9, 1),
+(28, 23, 1),
+(28, 4, 1),
+(28, 6, 1),
+(28, 9, 1),
+(29, 4, 1),
+(29, 6, 1),
+(29, 9, 1),
+(29, 80, 1),
+(29, 47, 1);
 
 -- --------------------------------------------------------
 
@@ -369,7 +382,8 @@ INSERT INTO `user` (`id`, `name`, `surname`, `email`, `login`, `password`, `rank
 (2, 'Профи', 'Професси', 'professional228@mail.ru', 'professional228', '$2y$10$TOXjR9a6og2EkMaZRBPP/uSjsKlIARogM6c3btbCXl8Cc9VO9S8qa', 1),
 (3, NULL, NULL, 'baskov@mail.ru', 'baskov', '$2y$10$Wi5QnA1ow8Uc1KT82SbvbugfcrS4k9QzMPbpDRdqWqGwHFTcaVF0m', 1),
 (4, NULL, NULL, 'putin@mail.ru', 'putin1', '$2y$10$X/OVhVlL2UPrGEGedrYUS.Yo3Uf1XGrTO/y9XWHs8ubuJHE3tuVj.', 1),
-(5, NULL, NULL, 'medvedev@mail.ru', 'medvedev', '$2y$10$uvoJeORN0i8aDuGh4O//HuCgq.kYq/Sgbn1zL2ukzsbGJ3pGz6EHe', 1);
+(5, NULL, NULL, 'medvedev@mail.ru', 'medvedev', '$2y$10$uvoJeORN0i8aDuGh4O//HuCgq.kYq/Sgbn1zL2ukzsbGJ3pGz6EHe', 1),
+(6, NULL, NULL, 'admin@mail.ru', 'admin$_$', '$2y$10$jafForRJwB04gv2ZsnnbMOgbZXL2WWZ82a5Jg2LsJAEd5AXK8Z/cm', 0);
 
 --
 -- Индексы сохранённых таблиц
@@ -464,7 +478,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT для таблицы `buy`
 --
 ALTER TABLE `buy`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT для таблицы `category`
@@ -482,7 +496,7 @@ ALTER TABLE `goods`
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц

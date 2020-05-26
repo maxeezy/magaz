@@ -3,7 +3,7 @@ $pages = [
     '' => [
         'title' => 'Интернет магазин значков и украшений',
         'content' => 'main.html',
-        'scripts' => ['main_view', 'view_add']
+        'scripts' => ['main_view', 'view_add','slider']
     ],
     '404' => [
         'title' => 'Страница не найдена',
@@ -83,6 +83,11 @@ $pages = [
     'user' => [
         'title' => 'Личный кабинет | Интернет магазин значков и украшений',
         'content' => 'user.html',
-        'scripts' => ['view_info','view_orders']
+        'scripts' => ['view_info','view_orders','logout']
+    ],
+    'admin' => [
+        'title' => 'Админ панель | Интернет магазин значков и украшений',
+        'content' => 'admin.html',
+        'scripts' => ['orders','goods','logout']
     ]
 ];

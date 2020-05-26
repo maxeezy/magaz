@@ -17,4 +17,5 @@ RewriteRule ^sign-in$ sign-in.php [L]
 RewriteRule ^sign-up$ sign-up.php [L]
 RewriteRule ^user$ user.php [L]
 RewriteRule ^user/order/([0-9]+)$ user.php?orderId=$1 [L]
-ErrorDocument 404 http://magaz/404
+RewriteRule ^admin$ admin.php [L]
+ErrorDocument 404 http://a0440803.xsph.ru/404

@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$db   = 'magaz';
-$user = 'root';
-$pass = '';
+$db   = 'a0440803_magaz';
+$user = 'a0440803_magaz';
+$pass = '1602asas';
 $charset = 'utf8';
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $opt = [
